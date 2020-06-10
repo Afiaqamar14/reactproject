@@ -33,7 +33,7 @@ jobs:
       run: yarn build
     
     - name: install Surge
-      run: npm install -g surge
+      run: npm install --global surge
 
     - name: Deploy to Surge
       run: surge ./build reactproject.surge.sh --token{{secrets.Surge_Token}}
